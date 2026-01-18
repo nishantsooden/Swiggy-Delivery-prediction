@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import joblib
-
+import os
+import pickle
 # Page config
 st.set_page_config(
     page_title="Swiggy Delivery Time Prediction",
@@ -10,11 +11,14 @@ st.set_page_config(
 )
 
 # Load model
-@st.cache_resource
-def load_model():
-    return joblib.load("swiggy.pkl")
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(CURRENT_DIR)
 
-model = load_model()
+MODEL_PATH = os.path.join(BASE_DIR, "model", "swiggy.pkl")
+
+model = pickle.load(open(MODEL_PATH, "rb"))
+
+model = pickle.load(open(MODEL_PATH, "rb"))
 
 # Title
 st.title("🍔 Swiggy Delivery Time Prediction")
