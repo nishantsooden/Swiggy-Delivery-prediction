@@ -15,7 +15,7 @@ Order_ID,Distance_km,Weather,Traffic_Level,Time_of_Day,Vehicle_Type,Preparation_
 14,6.1,Clear,Medium,Morning,Bike,25,6.0,38.4
 15,5.36,Clear,Medium,Evening,Bike,12,0.9,32.0
 16,5.4,Clear,High,Evening,Scooter,24,4.6,47.9
-17,8.3,Clear,Medium,Evening,Bike,33,6.1,56.7
+17,8.3,Clear,Medium,Evening,Bike,33,6.1,56.7   
 18,13.59,Clear,High,Night,Bike,9,9.6,76.8
 19,11.37,Clear,Medium,Afternoon,Bike,31,3.6,76.2
 20,7.99,Clear,Low,Morning,Scooter,24,7.8,33.0
